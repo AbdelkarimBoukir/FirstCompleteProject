@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.Complement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-family: "Bebas Neue", serif;
+
+}
+
+.input_class {
+  margin-bottom: 20px;
+}
+
+.input_class input {
+  width: 300px;
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+.input_class input:hover{
+  border: 3px solid orange;
+}
+
+.all-product{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.product-container {
+  display: inline-block;
+  width: 400px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 34px;
+  color: #333;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 25px;
+  color:  #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  
+  
+ 
+}
+
+.product-button a {
+  color: white;
+  text-decoration: none;
+  font-size:17px;
+  
+}
+
+.product-button:hover {
+  background-color: #1e1e1e;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .all-product {
+    grid-template-columns: repeat(2, 1fr); /* Display two columns on medium screens */
+  }
+
+  .product-container {
+    width: 350px; /* Adjust product container width */
+  }
+
+  .input_class input {
+    width: 250px; /* Adjust input width */
+  }
+
+  .product-name {
+    font-size: 28px; /* Adjust font size */
+  }
+
+  .product-price {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .all-product {
+    grid-template-columns: repeat(1, 1fr); /* Display one column on smaller screens */
+  }
+
+  .product-container {
+    width: 300px; /* Further reduce product container width */
+  }
+
+  .input_class input {
+    width: 200px; /* Further adjust input width */
+  }
+
+  .product-name {
+    font-size: 24px;
+  }
+
+  .product-price {
+    font-size: 20px;
+  }
+
+  .product-button {
+    font-size: 15px;
+    padding: 6px 10px; /* Adjust button padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-container {
+    width: 100%; /* Make the product container full-width */
+  }
+
+  .input_class input {
+    width: 100%; /* Input takes full width */
+  }
+
+  .product-name {
+    font-size: 20px;
+  }
+
+  .product-price {
+    font-size: 18px;
+  }
+
+  .product-button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}

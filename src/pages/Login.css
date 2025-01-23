@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+}
+
+
+.Contact-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 91.6vh;
+
+    background-color: orange;
+}
+.Login-Container{
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+    background: white;
+    max-width: 410px;
+    margin: auto;
+    box-shadow: 0 10px 20px black;
+}
+.Login-Container .title{
+    text-align: center;
+    font-size: 1.37rem;
+    font-weight: 600;
+    margin-bottom: 1.87rem;
+}
+
+.Login-Container .social-login {
+    display: flex;
+    gap: 1.31rem;
+}
+.social-login .social-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.81rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 0;
+    border-radius: 0.31rem;
+    border: 1px solid #000000;
+    background: white;
+    transition:0.2s ease ;
+
+}
+.social-login .social-button:hover{
+    background: white;
+    border-color: orange;
+}
+
+.social-login .social-button .social-img{
+    width: 23px;
+    
+}
+.social-img{
+    height: 30px;
+}
+
+.Login-Container .separator{
+    margin: 1.5rem 0;
+    text-align: center;
+    position: relative;
+}
+.Login-Container .separator span{
+    background-color: white;
+    padding: 0 0.9rem;
+    font-size: 1.06rem;
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+}
+.Login-Container .separator::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #000000;
+
+}
+.input-wrapper{
+    position: relative;
+    width: 100%;
+}
+.login-form .input-wrapper{
+    height: 54px;
+    width: 100%;
+    position: relative;
+    margin-bottom:1.5rem ;
+}
+.login-form .input-wrapper .input-field{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 1.06rem;
+    border-radius: 0.31rem;
+    border: 1px solid rgb(254, 217, 149);
+    padding: 0 1.25rem 0 3.12rem;
+    transition: 0.2 ease;
+
+
+}
+.login-form .input-wrapper .input-field:focus{
+    border-color: orange;
+}
+.login-form .input-wrapper .input-field::placeholder{
+    color: rgb(57, 57, 57); 
+
+}
+
+.login-form .input-wrapper i{
+    color: rgb(254, 217, 149);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2 ease;
+} 
+.login-form .input-wrapper .input-field:focus~i{
+    color: rgb(255, 189, 66) ;
+}
+.login-form .forgot-link{
+    display: block;
+    margin-top:-0.46rem ;
+    width: fit-content;
+}
+
+.login-form .login-button{
+    width: 100%;
+    margin-top: 2.19rem;
+    height: 54px;
+    background: rgb(255, 190, 70);
+    cursor: pointer;
+    outline: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border-radius: 0.32rem;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.login-form .login-button:hover{
+    background: orange;
+}
+.Login-Container .signup-text{
+    text-align: center;
+    margin: 1.75rem 0 0.31rem;
+}
+.Login-Container a{
+    color: rgb(255, 170, 12);
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.Login-Container a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .Login-Container {
+        padding: 1rem 0.5rem;
+        max-width: 90%;
+    }
+
+    .Login-Container .title {
+        font-size: 1.1rem;
+    }
+
+    .social-login .social-button {
+        padding: 0.6rem;
+    }
+
+    .login-form .login-button {
+        height: 48px;
+        font-size: 0.95rem;
+    }
+
+    .login-form .input-wrapper .input-field {
+        padding: 0 1rem 0 2.5rem;
+    }
+
+    .login-form .input-wrapper i {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,60 @@
+/* Details.css */
+
+.DetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 500px; /* Adjust width */
+    text-align: center;
+  }
+  
+  #DImage {
+    width: 100%;
+    max-width: 300px; /* Image should not exceed this width */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .DName {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .DPrix {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .DetailsContainer p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .DetailsContainer {
+      padding: 15px;
+    }
+  
+    .DName {
+      font-size: 1.5rem;
+    }
+  
+    .DPrix {
+      font-size: 1.2rem;
+    }
+  
+    .DetailsContainer p {
+      font-size: 0.9rem;
+    }
+  }
+  

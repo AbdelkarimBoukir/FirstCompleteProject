@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px; 
+  background-color: black;
+  height: 80px; 
+}
+
+.left_side h3 {
+  color: white;
+  font-size: 40px; 
+  line-height: 1; 
+  margin: 0; 
+}
+
+.left_side h3 span {
+  color: orange;
+  font-size: 45px; 
+  font-weight: bold;
+}
+
+.right_side {
+  display: flex;
+  gap: 30px; 
+}
+
+.right_side a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex; /* Align icon and text horizontally */
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+  transition: color 0.3s ease-in-out;
+}
+
+.right_side a:hover {
+  color: orange; /* Hover effect for links */
+}
+
+.right_side svg {
+  font-size: 20px; 
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .left_side h3 {
+    font-size: 30px; /* Smaller font for smaller screens */
+  }
+
+  .left_side h3 span {
+    font-size: 35px;
+  }
+
+  .right_side {
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px; /* Reduce gap between links */
+  }
+
+  .right_side a {
+    font-size: 18px; /* Slightly smaller text for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .left_side h3 {
+    font-size: 25px; 
+  }
+
+  .left_side h3 span {
+    font-size: 30px;
+  }
+
+  .right_side a {
+    font-size: 16px;
+  }
+}
