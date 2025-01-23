@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4ccd327.css",
+    "main.js": "/static/js/main.29ed17dd.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/page3.png": "/static/media/page3.d66446cd20eae39130e8.png",
+    "static/media/preworkout.png": "/static/media/preworkout.333e13eee1808d6eefef.png",
+    "static/media/bcaa.png": "/static/media/bcaa.99e297a180ba0c339305.png",
+    "static/media/magenisium.png": "/static/media/magenisium.3ac1f9228654e9e7ef64.png",
+    "static/media/omega3.png": "/static/media/omega3.13a0e80144aa6f392d6b.png",
+    "static/media/Glutamine.jpg": "/static/media/Glutamine.b137978592d5e020fa5b.jpg",
+    "static/media/wheyey.jpg": "/static/media/wheyey.0b2777ebff595e7bc0ba.jpg",
+    "static/media/creatine.jpg": "/static/media/creatine.0173809741da309b3f35.jpg",
+    "static/media/barProteine.jpg": "/static/media/barProteine.5b610e5c90befc0f1b9f.jpg",
+    "static/media/google.svg": "/static/media/google.7506d37346ee6763cee25ae8e2ec30c9.svg",
+    "static/media/apple.svg": "/static/media/apple.92d3b7346f983ce98ccb25a7f6a3d016.svg",
+    "index.html": "/index.html",
+    "main.d4ccd327.css.map": "/static/css/main.d4ccd327.css.map",
+    "main.29ed17dd.js.map": "/static/js/main.29ed17dd.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4ccd327.css",
+    "static/js/main.29ed17dd.js"
+  ]
+}
