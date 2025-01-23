@@ -12,7 +12,7 @@ import Coachs from "./pages/Coachs";
 function App() {
   return (
   <div className='App' >
-   <HashRouter>
+   <HashRouter >
      <Navbar/>
        <Routes>
             <Route path="/" element={<Home/>}/>
