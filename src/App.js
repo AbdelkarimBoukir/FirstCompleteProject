@@ -12,7 +12,7 @@ import Coachs from "./pages/Coachs";
 function App() {
   return (
   <div className='App' >
-   <HashRouter >
+   <Router>
      <Navbar/>
        <Routes>
             <Route path="/" element={<Home/>}/>
@@ -21,7 +21,7 @@ function App() {
             <Route path="/contact" element={<Login/>}/>
             <Route path='/coach' element={<Coachs/>} />
        </Routes>
-  </HashRouter>
+  </Router>
   </div>
   
   );
