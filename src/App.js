@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';import './App.css';
+import { BrowserRouter as Router, Routes, Route,HashRouter } from 'react-router-dom';import './App.css';
 import Home from './pages/Home';
 import Navbar from './Components/NavBar';
 import Complement from './pages/Complement';
@@ -12,7 +12,7 @@ import Coachs from "./pages/Coachs";
 function App() {
   return (
   <div className='App' >
-   <Router>
+   <HashRouter>
      <Navbar/>
        <Routes>
             <Route path="/" element={<Home/>}/>
@@ -21,7 +21,7 @@ function App() {
             <Route path="/contact" element={<Login/>}/>
             <Route path='/coach' element={<Coachs/>} />
        </Routes>
-  </Router>
+  </HashRouter>
   </div>
   
   );
